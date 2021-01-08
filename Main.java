@@ -1,20 +1,15 @@
 public class Main {
-    public static void main(String[] args){
-        long begin = 100; //переменная begin отражает баланс до пополнения счёта, то есть у пользователя изначально на балансе могут быть деньги, и эта переменная отражает сколько лежит на счёте
-        long plus = 1000 ; //переменная, которая показывает сколько доложили на счёт
-        long bonus;
-        long balance = begin + plus ; //переменная, с помощью которой система определяет, получает ли клиент бонус
-       if (balance >= 1000) {
-            bonus = ((balance)/100)+balance;
-           System.out.println(bonus); //bonus выводится только при том условии, что клиент положил на счёти сумму, которая попадет под условия бонуса и нам итогом выводится состояние счёта с учтом бонуса
-        }
-       else{
-               System.out.println(balance); //если же клиент не попадает под бонус, то выводится только balance, в рассчете которого не заложен бонус
-       }
-
-
-
-
+public static void main(String[] args){
+long begin = 100;
+long plus = 1000 ;
+long balance ;
+if (plus >= 1000) {
+balance = plus/100 + begin + plus;
+                  }
+else{
+balance = plus + begin;
+     }
+System.out.println(balance);
     }
-
 }
+
