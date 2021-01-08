@@ -1,4 +1,4 @@
-public class main {
+public class Main {
     public static void main(String[] args){
         long begin = 100;
         long plus = 1000 ;
